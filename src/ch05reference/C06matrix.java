@@ -12,7 +12,7 @@ public class C06matrix {
 		
 		a[1][1] = 2000;
 		System.out.println(a[1][1]); //2000
-		System.out.println(b[1][1]); //20? 2000 ?
+		System.out.println(b[1][1]); //20? 2000 ? . 2000이 나옴
 		
 		b[2][2] = 9999;
 		System.out.println(b[2][2]); //9999
@@ -27,6 +27,18 @@ public class C06matrix {
 		b = new int[][] { {33, 44}, {22, 11} };  //b가 다른 값을 가지게됨
 		System.out.println(b[0][0]); //33
 		System.out.println(a[0][0]); //33? 1? . 1이 나옴 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 	}
 
