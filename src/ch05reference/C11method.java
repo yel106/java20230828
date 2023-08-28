@@ -4,7 +4,7 @@ public class C11method {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] a = method1();
+		int[] a = method1();  //참조값만 가지고 있음
 		
 		System.out.println("main 메소드");
 		System.out.println(System.identityHashCode(a));
