@@ -27,6 +27,8 @@ class MyClass01 {
     //인스턴스가 가져야하는 속성들
     int age;
 
+    String name;
+
 
 
 
