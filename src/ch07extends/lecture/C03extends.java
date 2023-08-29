@@ -17,6 +17,9 @@ class MyClass03 {
 
 //자식클래스
 class MySubClass031 extends MyClass03 {
-
+    void setName(String name) { //상속 받았는데 네임메소드를 만들수 없음
+    //private field는 자식 클래스에서 사용할 수 없음
+        //        this.name = name;
+    }
 
 }
