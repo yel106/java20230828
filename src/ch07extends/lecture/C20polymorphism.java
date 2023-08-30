@@ -1,4 +1,4 @@
-/*
+
 package ch07extends.lecture;
 
 
@@ -23,42 +23,6 @@ public class C20polymorphism {
             return new Map();
         }
     }
-}
-
-class Item {
-    public void printDesc() {
-        System.out.println("아이템입니다.");
-    }
-}
-
-class Potion extends Item {
-    @Override
-    public void printDesc() {
-        System.out.println("체력을 채워줍니다.");
-    }
-}
-
-class Map extends Item {
-    @Override
-    public void printDesc() {
-        System.out.println("지도를 확장해줍니다.");
-    }
-}
-*/
-package ch07extends.lecture;
-
-public class C20polymorphism {
-    public static void main(String[] args) {
-
-
-
-    }
-
-    public static Item getItem() {
-
-    }
-
-
 }
 
 class Item {
