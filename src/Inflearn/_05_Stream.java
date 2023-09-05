@@ -131,6 +131,6 @@ public class _05_Stream {
                 .collect(Collectors.toList());
 
         langListStartWithC.stream().forEach(System.out::println);
-        //ㅇㅇ
+        //ㅇㅇㅇ
     }
 }
