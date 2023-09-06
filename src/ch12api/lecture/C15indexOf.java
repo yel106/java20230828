@@ -1,6 +1,6 @@
 package ch12api.lecture;
 
-public class C14indexOf {
+public class C15indexOf {
     public static void main(String[] args) {
         //indextOf: 특정 문자열이 시작하는 위치(index) 리턴
         //값이 없으면 -1을 리턴함
