@@ -9,6 +9,7 @@ public class C18regex {
         System.out.println("x".matches("x")); //true
         System.out.println("a".matches("a")); //true a라는 글자는 a라는 패턴과 일치.
         System.out.println("a".matches("x")); //false a라는 글자는 x라는 패턴고 일치 하지 않음
+        System.out.println("----------");
 
         //문자들
         System.out.println("xyz".matches("xyz")); //true
