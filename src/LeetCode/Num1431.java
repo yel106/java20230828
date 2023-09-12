@@ -1,33 +1,51 @@
 package LeetCode;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Num1431 {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
-        List<Boolean> list = new ArrayList<>();
+//        List<Boolean> list = new ArrayList<>();
+//
+//        //배열에서 최대값 구하기
+//        int max = 0; //가장 작은 값이 1이니까 max=0으로 둠
+//        for (int candy : candies) {
+//            max = Math.max(max, candy);
+//        }
+//        //for문을 끝내고 나온 max가 5임
+//
+////        //extra와 더해서 max보다 크거나 같은지를 arraylist에 추가
+////        // [2, 3, 5, 1, 3 ]
+////        list.add((2+3) >=5 ); //true
+////        list.add((3+3) >=5 ); //true
+////        list.add((5+3) >=5 ); //true
+////        list.add((1+3) >=5 ); //false
+////        list.add((3+3) >=5 ); //true
+//        for (int candy : candies) {
+//            list.add((candy + extraCandies) >= max);
+//        }
+//
+//        return list;
 
-        //배열에서 최대값 구하기
-        int max = 0; //가장 작은 값이 1이니까 max=0으로 둠
-        for (int candy : candies) {
-            max = Math.max(max, candy);
-        }
-        //for문을 끝내고 나온 max가 5임
 
-//        //extra와 더해서 max보다 크거나 같은지를 arraylist에 추가
-//        // [2, 3, 5, 1, 3 ]
-//        list.add((2+3) >=5 ); //true
-//        list.add((3+3) >=5 ); //true
-//        list.add((5+3) >=5 ); //true
-//        list.add((1+3) >=5 ); //false
-//        list.add((3+3) >=5 ); //true
-        for (int candy : candies) {
-            list.add((candy + extraCandies) >= max);
-        }
+        //Stream으로 풀기. 고전적인 방법으로
+//        List<Boolean> list = new ArrayList<>();
+//        Arrays.stream(candies)
+//                        .max()
+//                                .getAsInt();
 
-        return list;
 
-}
+        int max = Arrays.stream(candies)
+                .max()
+                .getAsInt();
+
+        return Arrays.stream(candies)
+                .map(c -> c + extraCandies)
+                .mapToObj(c -> c >= max)
+                .toList();
+
 
 //다른 방법으로 푼것.
 //public class Study {
@@ -49,4 +67,8 @@ public class Num1431 {
 //    }
 //}
 
+
+
 }
+}
+

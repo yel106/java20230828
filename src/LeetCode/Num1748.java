@@ -1,7 +1,10 @@
 package LeetCode;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class Num1748 {
     public int sumOfUnique(int[] nums) {
@@ -19,7 +22,6 @@ public class Num1748 {
 
 
         }
-
         // [1, 1]
         // [2, 2]
         // [3, 1]
@@ -34,6 +36,27 @@ public class Num1748 {
         System.out.println(map);
 
         return sum;
+
+
+        //스트림으로 풀기
+        // 1,2,3,2
+
+        // 수 : 몇개 (counting)
+//        return Arrays.stream(nums)
+//                .boxed()
+//                .collect(Collectors.groupingBy(
+//                        Function.identity(),
+//                        Collectors.counting()))
+//                // 1개인 entry만 거르고(filter)
+//                .entrySet()
+//                .stream()
+//                .filter(e -> e.getValue() == 1)
+//                // entry의 키들
+//                .map(e -> e.getKey())
+//                // 만 더하기
+//                .mapToInt(Integer::intValue)
+//                .sum();
+
     }
 
 }

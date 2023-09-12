@@ -1,7 +1,10 @@
 package LeetCode;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class Num1512 {
     public int numIdenticalPairs(int[] nums) {
@@ -32,6 +35,21 @@ public class Num1512 {
         }
 
         return sum;
+
+
+        //stream으로 푸는 방법
+//        return Arrays.stream(nums)
+//                .boxed()
+//                .collect(Collectors.groupingBy(
+//                        Function.identity(),
+//                        Collectors.counting()))
+//                .values()
+//                .stream()
+//                .map(n -> (n) * (n - 1) / 2)
+//                .mapToInt(n -> n.intValue())
+//                .sum();
+
+
     }
 
 }
