@@ -2,9 +2,7 @@ package ch16lambda.lecture;
 
 public class C01lambda {
     public static void main(String[] args) {
-        MyInterface01 o1 = (x, y) -> {
-            System.out.println(x + y);
-        };
+        MyInterface01 o1 = (x, y) -> System.out.println(x + y);
 
         MyInterface01 o2 = new MyInterface01() {
             @Override

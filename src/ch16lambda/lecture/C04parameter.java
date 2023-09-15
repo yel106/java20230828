@@ -13,9 +13,9 @@ public class C04parameter {
         list.forEach(e -> System.out.println(e));
 
         int[] arr = {10, 20, 40, 100, 200, 300};
-        Arrays.stream(arr).forEach(e -> System.out.println(e));
+        Arrays.stream(arr).forEach(e -> System.out.println(e)); //각 요소를 e라는 변수에 대입하고 그 값을 화면에 출력하는 동작
         System.out.println();
-        Arrays.stream(arr).forEach(System.out::println);
+        Arrays.stream(arr).forEach(System.out::println);// 클래스 - 메소드. 오른쪽에 있는 메소드를 쓰겠다는 뜻
 
 
     }

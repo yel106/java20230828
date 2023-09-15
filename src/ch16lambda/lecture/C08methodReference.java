@@ -11,6 +11,8 @@ public class C08methodReference {
 class MyClass08 {
     void otherMethod(int x, int y) { //인스턴스 메소드
 
+
+
     }
 }
 
