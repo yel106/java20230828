@@ -13,6 +13,11 @@ public class C04foreach {
         list.add(new MyClass04("민재"));
 
         list.forEach(System.out::println); //오브젝트의 투스트링 메소드를 실행하기 떄문에 재정의해줘야함
+                                            //toString 메소드: 객체를 문자열로 표현하는 메소드
+        //위에 코드와 같은말
+        for (MyClass04 myClass04 : list) {
+            System.out.println(myClass04);
+        }
         //Alt + insert 누르고 toString
 
     }

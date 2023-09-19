@@ -12,7 +12,6 @@ public class C08set {
         set.add("min");
 
         set.forEach(System.out::println);  //set은 순서대로 안나옴
-
         System.out.println("시간이 흐른후");
        set.forEach(System.out::println);
     }

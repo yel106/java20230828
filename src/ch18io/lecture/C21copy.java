@@ -1,5 +1,4 @@
 package ch18io.lecture;
-
 import java.io.*;
 
 public class C21copy {

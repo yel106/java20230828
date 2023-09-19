@@ -21,7 +21,7 @@ public class C03contains {
         System.out.println("c1 = " + c1); // false? true?
 
         List<MyClass03> list2 = new ArrayList<>();
-        list2.add(new MyClass03("흥민"));
+        list2.add(new MyClass03("흥민")); //ArrayList에 새로운 객체를 추가하는것.
         list2.add(new MyClass03("강인"));
 
         boolean c2 = list2.contains(new MyClass03("흥민"));

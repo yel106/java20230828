@@ -7,6 +7,7 @@ import java.util.List;
 
 public class C06nestedList {
     public static void main(String[] args) {
+        //2차원 배열
         List<List<Integer>> list = new ArrayList<>();
         List<Integer> row1 = new ArrayList<>();
         List<Integer> row2 = new ArrayList<>();
